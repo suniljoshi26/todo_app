@@ -42,7 +42,7 @@ const TodoPage = () => {
   return (
     <>
       <Header />
-      <div className="px-40">
+      <div className="  px-10 sm:px-40">
         <H1>Things to get done</H1>
         <H3>Things to do</H3>
         {!todoList.length && <Msg />}
