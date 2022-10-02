@@ -22,6 +22,7 @@ export const Button = (props) => {
           radiusClass
         }
         onClick={props.onClick}
+        disabled={props.disabled}
       >
         {props.children}
       </button>
