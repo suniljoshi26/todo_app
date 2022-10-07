@@ -28,7 +28,7 @@ export const TodoForm = (props) => {
           <Button disabled={!input} onClick={handleSave}>
             save
           </Button>
-          <Button them="secondary">Cancle</Button>
+          <Button them="secondary">Cancel</Button>
         </div>
       </form>
     </div>
