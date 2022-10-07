@@ -25,7 +25,7 @@ export const TodoForm = (props) => {
       <form onSubmit={props.onClose}>
         <Input value={input} onChange={handleInputChange} />
         <div className="flex gap-6">
-          <Button disabled={inputValue.trim().length == 0} onClick={handleSave}>
+          <Button disabled={input.trim().length == 0} onClick={handleSave}>
             save
           </Button>
           <Button them="secondary">Cancel</Button>
