@@ -17,7 +17,7 @@ export const Button = (props) => {
     <div>
       <button
         className={
-          "px-4 py-2 text-sm font-medium  border  shadow-sm " +
+          "px-4 py-2 text-sm font-medium  border  shadow-sm disabled:bg-gray-400 " +
           themClass +
           radiusClass
         }
