@@ -6,14 +6,13 @@ export const TodoForm = (props) => {
   const [input, setInput] = useState();
 
   const handleInputChange = (event) => {
-    let x = event.target.value;
-    if (x == " ") {
-      return;
-    }
-    setInput(x);
+    setInput(event.target.value);
   };
 
   const handleSave = () => {
+    if (input.trim().length == 0) {
+      return;
+    }
     props.onClose();
     props.onSave(input);
     setInput("");
